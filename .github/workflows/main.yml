@@ -1,0 +1,15 @@
+name: Daily check for new updates
+
+on:
+  schedule:
+    - cron: '0 0 * * *'
+
+jobs:
+  daily-task:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+        
+      - name: Running bash update script
+        run: ls
