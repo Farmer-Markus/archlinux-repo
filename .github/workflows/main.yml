@@ -2,6 +2,7 @@ name: Daily check for new updates
 
 on:
   schedule:
+    workflow_dispatch:
     - cron: '0 0 * * *'
 
 jobs:
